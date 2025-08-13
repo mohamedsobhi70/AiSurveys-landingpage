@@ -575,6 +575,17 @@ video {
   transition: max-height 0.3s ease;
 }
 
+.accordion-icon {
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-item.active .accordion-icon {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -783,10 +794,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-\[21px\] {
-  margin-top: 21px;
 }
 
 .box-border {
@@ -1931,10 +1938,6 @@ video {
   border-top-width: 1px;
 }
 
-.border-b-0 {
-  border-bottom-width: 0px;
-}
-
 .border-solid {
   border-style: solid;
 }
@@ -2144,6 +2147,11 @@ video {
   padding-bottom: 3rem;
 }
 
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -2157,10 +2165,6 @@ video {
 .py-\[68px\] {
   padding-top: 68px;
   padding-bottom: 68px;
-}
-
-.pt-\[\[21px\]\] {
-  padding-top: [21px];
 }
 
 .pt-\[21px\] {
