@@ -712,20 +712,16 @@ video {
   top: 0.625rem;
 }
 
-.top-\[10\%\] {
-  top: 10%;
+.top-\[13\.5\%\] {
+  top: 13.5%;
 }
 
 .top-\[13px\] {
   top: 13px;
 }
 
-.top-\[13\.5\%\%\] {
-  top: 13.5%%;
-}
-
-.top-\[13\.5\%\] {
-  top: 13.5%;
+.-top-1\/2 {
+  top: -50%;
 }
 
 .z-50 {
@@ -741,16 +737,16 @@ video {
   margin-right: auto;
 }
 
-.mt-auto {
-  margin-top: auto;
-}
-
 .me-auto {
   margin-inline-end: auto;
 }
 
 .ms-auto {
   margin-inline-start: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
 
 .flex {
@@ -801,20 +797,20 @@ video {
   height: 2px;
 }
 
-.h-\[80\%\] {
-  height: 80%;
-}
-
-.h-\[894px\] {
-  height: 894px;
+.h-\[75\%\] {
+  height: 75%;
 }
 
 .h-full {
   height: 100%;
 }
 
-.h-\[75\%\] {
-  height: 75%;
+.h-\[200\] {
+  height: 200;
+}
+
+.h-\[200\%\] {
+  height: 200%;
 }
 
 .w-\[10\%\] {
@@ -823,10 +819,6 @@ video {
 
 .w-\[213px\] {
   width: 213px;
-}
-
-.w-\[439px\] {
-  width: 439px;
 }
 
 .w-\[80\%\] {
@@ -841,16 +833,12 @@ video {
   max-width: 42rem;
 }
 
-.max-w-full {
-  max-width: 100%;
-}
-
-.max-w-\[\] {
-  max-width: ;
-}
-
 .max-w-\[80\%\] {
   max-width: 80%;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-1 {
@@ -900,10 +888,6 @@ video {
 
 .items-start {
   align-items: flex-start;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -1021,17 +1005,8 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-transparent {
-  background-color: transparent;
 }
 
 .bg-gradient-to-b {
@@ -1254,7 +1229,7 @@ select {
 }
 
 a:hover .animate-arrow-down {
-  animation: scrolling 1s linear infinite;
+  animation: scrolling 1s linear ;
 }
 
 .first\:border-t:first-child {
@@ -1398,6 +1373,18 @@ a:hover .animate-arrow-down {
 
 .\[\&\:\:-webkit-slider-runnable-track\]\:h-\[2px\]::-webkit-slider-runnable-track {
   height: 2px;
+}
+
+.\[\&\:\:-webkit-slider-runnable-track\]\:h-\[4px\]::-webkit-slider-runnable-track {
+  height: 4px;
+}
+
+.\[\&\:\:-webkit-slider-runnable-track\]\:h-\[8px\]::-webkit-slider-runnable-track {
+  height: 8px;
+}
+
+.\[\&\:\:-webkit-slider-runnable-track\]\:h-\[14px\]::-webkit-slider-runnable-track {
+  height: 14px;
 }
 
 .\[\&\:\:-webkit-slider-runnable-track\]\:bg-transparent::-webkit-slider-runnable-track {
