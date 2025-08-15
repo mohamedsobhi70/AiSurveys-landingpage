@@ -664,6 +664,10 @@ video {
   position: relative;
 }
 
+.-top-1\/2 {
+  top: -50%;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -720,12 +724,12 @@ video {
   top: 13px;
 }
 
-.-top-1\/2 {
-  top: -50%;
-}
-
 .z-50 {
   z-index: 50;
+}
+
+.z-\[2\] {
+  z-index: 2;
 }
 
 .order-first {
@@ -735,6 +739,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.-mx-20 {
+  margin-left: -5rem;
+  margin-right: -5rem;
 }
 
 .me-auto {
@@ -747,6 +756,10 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -805,12 +818,16 @@ video {
   height: 100%;
 }
 
-.h-\[200\] {
-  height: 200;
+.min-h-screen {
+  min-height: 100vh;
 }
 
-.h-\[200\%\] {
-  height: 200%;
+.min-h-\[200\] {
+  min-height: 200;
+}
+
+.min-h-\[200vh\] {
+  min-height: 200vh;
 }
 
 .w-\[10\%\] {
@@ -870,6 +887,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.resize {
+  resize: both;
 }
 
 .appearance-none {
@@ -956,6 +977,14 @@ video {
 
 .gap-\[55px\] {
   gap: 55px;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .overflow-hidden {
@@ -1069,6 +1098,11 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-\[13px\] {
   padding-top: 13px;
   padding-bottom: 13px;
@@ -1156,16 +1190,16 @@ video {
   line-height: 28px;
 }
 
+.leading-\[44px\] {
+  line-height: 44px;
+}
+
 .leading-\[48px\] {
   line-height: 48px;
 }
 
 .leading-\[66px\] {
   line-height: 66px;
-}
-
-.leading-\[44px\] {
-  line-height: 44px;
 }
 
 .text-black {
@@ -1233,7 +1267,16 @@ select {
 }
 
 a:hover .animate-arrow-down {
-  animation: scrolling 1s linear ;
+  animation: scrolling 1s linear;
+}
+
+#explore-section {
+  scroll-snap-align: start;
+}
+
+#scroll-video {
+  max-height: 80vh;
+  position: relative;
 }
 
 .first\:border-t:first-child {
@@ -1259,6 +1302,10 @@ a:hover .animate-arrow-down {
     right: 66.666667%;
   }
 
+  .lg\:top-1\/3 {
+    top: 33.333333%;
+  }
+
   .lg\:top-14 {
     top: 3.5rem;
   }
@@ -1271,6 +1318,11 @@ a:hover .animate-arrow-down {
     grid-column: span 2 / span 2;
   }
 
+  .lg\:-mx-20 {
+    margin-left: -5rem;
+    margin-right: -5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1279,8 +1331,16 @@ a:hover .animate-arrow-down {
     display: flex;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:min-h-screen {
     min-height: 100vh;
+  }
+
+  .lg\:min-h-\[200vh\] {
+    min-height: 200vh;
   }
 
   .lg\:grid-cols-3 {
@@ -1341,6 +1401,14 @@ a:hover .animate-arrow-down {
     padding-bottom: 0px;
   }
 
+  .lg\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+  .lg\:pt-24 {
+    padding-top: 6rem;
+  }
+
   .lg\:text-\[55px\] {
     font-size: 55px;
   }
@@ -1375,20 +1443,12 @@ a:hover .animate-arrow-down {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
-.\[\&\:\:-webkit-slider-runnable-track\]\:h-\[2px\]::-webkit-slider-runnable-track {
-  height: 2px;
-}
-
-.\[\&\:\:-webkit-slider-runnable-track\]\:h-\[4px\]::-webkit-slider-runnable-track {
-  height: 4px;
-}
-
-.\[\&\:\:-webkit-slider-runnable-track\]\:h-\[8px\]::-webkit-slider-runnable-track {
-  height: 8px;
-}
-
 .\[\&\:\:-webkit-slider-runnable-track\]\:h-\[14px\]::-webkit-slider-runnable-track {
   height: 14px;
+}
+
+.\[\&\:\:-webkit-slider-runnable-track\]\:h-\[2px\]::-webkit-slider-runnable-track {
+  height: 2px;
 }
 
 .\[\&\:\:-webkit-slider-runnable-track\]\:bg-transparent::-webkit-slider-runnable-track {
