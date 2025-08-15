@@ -1335,12 +1335,28 @@ a:hover .animate-arrow-down {
     display: none;
   }
 
+  .lg\:h-screen {
+    height: 100vh;
+  }
+
+  .lg\:max-h-\[100px\] {
+    max-height: 100px;
+  }
+
   .lg\:min-h-screen {
     min-height: 100vh;
   }
 
   .lg\:min-h-\[200vh\] {
     min-height: 200vh;
+  }
+
+  .lg\:min-h-\[100px\] {
+    min-height: 100px;
+  }
+
+  .lg\:min-h-\[1000px\] {
+    min-height: 1000px;
   }
 
   .lg\:grid-cols-3 {
@@ -1415,6 +1431,20 @@ a:hover .animate-arrow-down {
 
   .lg\:leading-\[66px\] {
     line-height: 66px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:min-h-\[\] {
+    min-height: ;
+  }
+
+  .\32xl\:min-h-\[800px\] {
+    min-height: 800px;
+  }
+
+  .\32xl\:min-h-\[1000px\] {
+    min-height: 1000px;
   }
 }
 
