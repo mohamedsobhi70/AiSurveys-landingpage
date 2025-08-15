@@ -19,7 +19,7 @@
     <header class="absolute top-0 left-0 w-full py-[22px] lg:py-12 z-50">
         <div class="container">
             <a href="index.html">
-                <img src="assets/images/logo.svg" width="76" height="25" alt="DesignPeer Logo" />
+                <img src="assets/images/logo.svg" width="65" height="25" alt="DesignPeer Logo" />
             </a>
         </div>
     </header>
@@ -583,7 +583,7 @@
                                 <span
                                     class="absolute top-1/2 start-full -translate-y-1/2 -translate-x-[5px] bg-black rounded-full size-2.5"></span>
                             </div>
-                            <input id="pricing-slider" type="range" step=".5" min="1" max="100" value="30" class="w-full absolute -top-1/2 -translate-y-1/2  opacity-0 left-0 appearance-none cursor-pointer 
+                            <input id="pricing-slider" type="range" step=".5" min="1" max="100" value="10" class="w-full absolute -top-1/2 -translate-y-1/2  opacity-0 left-0 appearance-none cursor-pointer 
            [&::-webkit-slider-thumb]:cursor-pointer 
            [&::-webkit-slider-runnable-track]:h-[14px] 
            [&::-moz-range-thumb]:cursor-pointer" />
@@ -596,10 +596,10 @@
                         </span>
                         <div class="flex flex-col gap-2 lg:gap-[13px]">
                             <h3 class="text-[21px] leading-[28px]">
-                                Response Rate Garuntee
+                                Responses, or you pay nothing.
                             </h3>
                             <p class="text-[17px] leading-[28px] text-black/60">
-                                WhatsApp-native delivery, verified sender, works on any device
+                                If we don’t deliver at least double your current response rate, you won’t pay a thing.
                             </p>
                         </div>
                     </div>
@@ -842,7 +842,7 @@
     </main>
     <footer class="py-12">
         <div class="container text-center text-[17px] leading-[28px] text-black/60">
-            ©Cezion
+            ©Qoots
         </div>
     </footer>
     <script>
@@ -1016,7 +1016,7 @@
             const messages = value * 10;
 
             // حساب التكلفة الإجمالية (بالدولار)
-            const price = (messages * pricePerMessage) ;
+            const price = (messages * pricePerMessage);
 
             // حساب عدد الردود (كل 5 رسائل = 1 رد)
             const responses = Math.floor(messages / 5);
