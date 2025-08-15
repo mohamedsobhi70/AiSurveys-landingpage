@@ -809,10 +809,6 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .max-h-\[1000px\] {
   max-height: 1000px;
 }
@@ -1303,6 +1299,10 @@ a:hover .animate-arrow-down {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-screen {
+    height: 100vh;
   }
 
   .lg\:min-h-screen {
