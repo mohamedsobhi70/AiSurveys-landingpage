@@ -1249,15 +1249,6 @@ a:hover .animate-arrow-down {
   animation: scrolling 1s linear;
 }
 
-#explore-section {
-  scroll-snap-align: start;
-}
-
-#scroll-video {
-  max-height: 80vh;
-  position: relative;
-}
-
 .first\:border-t:first-child {
   border-top-width: 1px;
 }
