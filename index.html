@@ -998,63 +998,8 @@
 
         // Initial set
         updateValues();
-        document.addEventListener('DOMContentLoaded', function () {
-            const video = document.getElementById('scroll-video');
-            const videoContainer = document.querySelector('#explore-section');
-
-            // Preload video metadata
-            video.addEventListener('loadedmetadata', function () {
-                // Set video to start paused at frame 0
-                video.pause();
-                video.currentTime = 0;
-
-                // Set up scroll listener
-                setupScrollVideo();
-            });
-
-            function setupScrollVideo() {
-                const videoDuration = video.duration;
-                const containerHeight = videoContainer.offsetHeight;
-                const windowHeight = window.innerHeight;
-
-                // Calculate when the video container enters and exits the viewport
-                let containerTop = videoContainer.offsetTop;
-                let containerBottom = containerTop + containerHeight;
-
-                // Adjust for scroll position
-                function updateVideoPlayback() {
-                    const scrollPosition = window.scrollY;
-                    const scrollPercent = (scrollPosition - containerTop + windowHeight) / (containerHeight + windowHeight);
-
-                    // Only manipulate video when in view
-                    if (scrollPosition + windowHeight > containerTop && scrollPosition < containerBottom) {
-                        // Calculate video time based on scroll position
-                        const videoTime = Math.min(videoDuration, Math.max(0, scrollPercent * videoDuration));
-                        video.currentTime = videoTime;
-                    }
-                }
-
-                // Throttle scroll events for performance
-                let isScrolling;
-                window.addEventListener('scroll', function () {
-                    window.clearTimeout(isScrolling);
-                    isScrolling = setTimeout(function () {
-                        updateVideoPlayback();
-                    }, 50);
-                }, false);
-
-                // Initial check
-                updateVideoPlayback();
-
-                // Recalculate positions on resize
-                window.addEventListener('resize', function () {
-                    containerTop = videoContainer.offsetTop;
-                    containerBottom = containerTop + containerHeight;
-                    updateVideoPlayback();
-                });
-            }
-        });
-    </script>
+    
+        </script>
 </body>
 
 
