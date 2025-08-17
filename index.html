@@ -13,7 +13,7 @@
     <title>Qoots | Risk-Free AI WhatsApp Surveys for Higher Response Rates</title>
     <meta name="description" content="---" />
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" sizes="16x16" />
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         (function (c, l, a, r, i, t, y) {
             c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
             t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
@@ -21,13 +21,41 @@
         })(window, document, "clarity", "script", "sveey2eowl");
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZ5HVRX2MV"></script>
-    <script>
+    <!-- <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-GZ5HVRX2MV');
     </script> -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17485768382">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-17485768382');
+    </script>
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17485768382/yhBZCK3W7IcbEL7N7pFB',
+                'value': 1.0,
+                'currency': 'EGP',
+                'event_callback': callback
+            });
+            return false;
+        }
+
+    </script>
 </head>
 
 <body class="font-Inter antialiased">
@@ -55,10 +83,9 @@
                             </p>
                         </div>
                         <div class="flex flex-col lg:flex-row lg:items-center gap-[13px] lg:gap-[21px]">
-                            <a href="https://calendly.com/mohamed-qoots/30min" target="_blank"
-                                class="primary-btn py-[13px] px-[21px]">
+                            <button class="primary-btn py-[13px] px-[21px]  cta-btn" onclick="gtag_report_conversion()">
                                 Get Started
-                            </a>
+                            </button>
                             <p class="text-[13px] text-black/60 ">
                                 Free setup. No credit card needed.
                             </p>
@@ -99,7 +126,7 @@
                         <source src="assets/videos/hero.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="h-[50px] absolute bottom-0 left-0 w-full bg-gradient-to-b from-transparent to-white z-[2]">
+                        class="h-[50px] absolute bottom-0 left-0 w-full bg-gradient-to-b from-transparent to-white z-[2] translate-y-[1px]">
                     </div>
                 </div>
             </div>
@@ -109,28 +136,6 @@
                         <span class="font-semibold"> Results first. Payment later.</span>
                         Only pay when we hit 2× response rate.
                     </p>
-
-                    <a href="#explore-section"
-                        class="group hidden lg:flex items-center gap-3 text-[13px] text-black/60 font-medium">
-                        Scroll to explore
-                        <span
-                            class="rounded-full bg-[#EEEEEE] inline-flex justify-center items-center size-[34px] overflow-hidden">
-                            <svg class="animate-arrow-down" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_641_6056)">
-                                    <path
-                                        d="M13.9283 12.0267L12.8676 10.966L9.37542 14.4582L9.37542 2.17047L7.87459 2.17047V14.4582L4.38236 10.966L3.3217 12.0267L8.625 17.33L13.9283 12.0267Z"
-                                        fill="black"></path>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_641_6056">
-                                        <rect width="18" height="18" fill="white"></rect>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <span class="sr-only">Scroll Down Button</span>
-                        </span>
-                    </a>
                 </div>
             </div>
         </section>
@@ -148,8 +153,7 @@
                     <p class="text-[17px] text-black/60 leading-[28px]">
                         Sent from a verified WhatsApp account, trusted, familiar, and works on any device.
                     </p>
-                    <a href="https://calendly.com/mohamed-qoots/30min" target="_blank"
-                        class="primary-btn size-[44px] items-center">
+                    <a href="#" class="primary-btn size-[44px] items-center">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_669_3212)">
                                 <path
@@ -275,7 +279,8 @@
                         </div>
 
                         <div class="px-[30px] mt-auto">
-                            <video class="video w-full object-contain" width="346" height="317" muted playsinline>
+                            <video class="video w-full object-contain" width="346" height="317" muted playsinline
+                                webkit-playsinline preload="metadata">
                                 <source src="assets/videos/churn.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -324,7 +329,8 @@
                         </div>
 
                         <div class="px-[30px] mt-auto">
-                            <video class="video w-full object-contain" width="346" height="317" muted playsinline>
+                            <video class="video w-full object-contain" width="346" height="317" muted playsinline
+                                webkit-playsinline preload="metadata">
                                 <source src="assets/videos/dropoff.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -373,7 +379,8 @@
                         </div>
 
                         <div class="px-[30px] mt-auto">
-                            <video class="video w-full object-contain" width="346" height="317" muted playsinline>
+                            <video class="video w-full object-contain" width="346" height="317" muted playsinline
+                                webkit-playsinline preload="metadata">
                                 <source src="assets/videos/post-support.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -422,7 +429,8 @@
                         </div>
 
                         <div class="px-[30px] mt-auto">
-                            <video class="video w-full object-contain" width="346" height="317" muted playsinline>
+                            <video class="video w-full object-contain" width="346" height="317" muted playsinline
+                                webkit-playsinline preload="metadata">
                                 <source src="assets/videos/PMF.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -471,7 +479,8 @@
                         </div>
 
                         <div class="px-[30px] mt-auto">
-                            <video class="video w-full object-contain" width="346" height="317" muted playsinline>
+                            <video class="video w-full object-contain" width="346" height="317" muted playsinline
+                                webkit-playsinline preload="metadata">
                                 <source src="assets/videos/Feedback.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -520,7 +529,8 @@
                         </div>
 
                         <div class="px-[30px] mt-auto">
-                            <video class="video w-full object-contain" width="346" height="317" muted playsinline>
+                            <video class="video w-full object-contain" width="346" height="317" muted playsinline
+                                webkit-playsinline preload="metadata">
                                 <source src="assets/videos/NPS.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -539,8 +549,8 @@
                     <h2 class="font-light text-[34px] text-black leading-[48px]">
                         Clear,<br> Simple Pricing
                     </h2>
-                    <a href="https://calendly.com/mohamed-qoots/30min" target="_blank"
-                        class="primary-btn py-[13px] px-[21px]">Get started</a>
+                    <button class="primary-btn py-[13px] px-[21px] cta-btn" onclick="gtag_report_conversion()">Get
+                        started</button>
                 </div>
                 <div class="lg:col-span-2 flex flex-col gap-[43px]">
                     <div class="flex flex-col gap-[34px]">
@@ -854,6 +864,7 @@
             ©Qoots
         </div>
     </footer>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const accordions = document.querySelectorAll(".accordion-item");
@@ -953,7 +964,11 @@
                 });
             }
         });
-
+        document.querySelectorAll('.cta-btn').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                gtag_report_conversion("https://calendly.com/mohamed-qoots/30min")
+            });
+        })
         const slider = document.getElementById("pricing-slider");
         const priceEl = document.getElementById("price");
         const messagesEl = document.getElementById("messages");
@@ -1024,6 +1039,8 @@
         countrySelect.addEventListener("change", updateValues);
 
         updateValues();
+
+
     </script>
 </body>
 
