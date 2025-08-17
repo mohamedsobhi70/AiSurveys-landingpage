@@ -801,16 +801,16 @@ video {
   height: 2px;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .h-\[75\%\] {
   height: 75%;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[50px\] {
-  height: 50px;
 }
 
 .max-h-\[1000px\] {
