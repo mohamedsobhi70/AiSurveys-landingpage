@@ -594,6 +594,41 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.use-cases-card {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 13px;
+  border-radius: 0.5rem;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 34px;
+  padding-right: 34px;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.use-cases-card:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 238 238 / var(--tw-bg-opacity, 1));
+}
+
+.use-cases-card.active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 238 238 / var(--tw-bg-opacity, 1));
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.use-cases-card > p {
+  display: none;
+}
+
+.use-cases-card.active > p {
+  display: block;
+}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -868,8 +903,8 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-0 {
-  --tw-translate-y: 0px;
+.translate-x-\[5px\] {
+  --tw-translate-x: 5px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -896,12 +931,20 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -952,6 +995,14 @@ video {
   gap: 1.75rem;
 }
 
+.gap-\[100px\] {
+  gap: 100px;
+}
+
+.gap-\[107px\] {
+  gap: 107px;
+}
+
 .gap-\[13px\] {
   gap: 13px;
 }
@@ -974,6 +1025,10 @@ video {
 
 .gap-\[55px\] {
   gap: 55px;
+}
+
+.gap-\[57px\] {
+  gap: 57px;
 }
 
 .overflow-hidden {
@@ -1004,6 +1059,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-\[\#0000001A\] {
+  border-color: #0000001A;
+}
+
 .border-black\/10 {
   border-color: rgb(0 0 0 / 0.1);
 }
@@ -1029,6 +1088,10 @@ video {
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-l {
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-r {
@@ -1065,6 +1128,10 @@ video {
 
 .p-\[34px\] {
   padding: 34px;
+}
+
+.p-\[53px\] {
+  padding: 53px;
 }
 
 .px-\[21px\] {
@@ -1107,6 +1174,10 @@ video {
   padding-bottom: 55px;
 }
 
+.pb-0 {
+  padding-bottom: 0px;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1135,12 +1206,20 @@ video {
   font-family: Inter, sans-serif;
 }
 
+.font-noto {
+  font-family: Noto Sans Arabic, sans-serif;
+}
+
 .text-\[13px\] {
   font-size: 13px;
 }
 
 .text-\[17px\] {
   font-size: 17px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
 }
 
 .text-\[21px\] {
@@ -1157,6 +1236,10 @@ video {
 
 .text-\[8px\] {
   font-size: 8px;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-light {
@@ -1235,12 +1318,19 @@ select {
   border-width: 1px;
   border-color: rgb(0 0 0 / 0.1);
   background-image: url('../images/icons/chevron-down.svg');
-  background-position: center right 15px;
   background-repeat: no-repeat;
   padding-top: 13px;
   padding-bottom: 13px;
   padding-inline-start: 21px;
   padding-inline-end: 55px;
+}
+
+select:where([dir="ltr"], [dir="ltr"] *) {
+  background-position: center right 15px;
+}
+
+select:where([dir="rtl"], [dir="rtl"] *) {
+  background-position: center left 15px;
 }
 
 @keyframes scrolling {
@@ -1298,6 +1388,18 @@ a:hover .animate-arrow-down {
     grid-column: span 2 / span 2;
   }
 
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .lg\:-mx-20 {
     margin-left: -5rem;
     margin-right: -5rem;
@@ -1323,8 +1425,16 @@ a:hover .animate-arrow-down {
     min-height: 100vh;
   }
 
+  .lg\:grid-cols-11 {
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
